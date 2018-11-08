@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Ticket Tac | Borne</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="container header__container">
+				<h1 class="title title--big header__title">Billet Simple</h1>
+				<img src="assets/img/sncb_bleu.svg" alt="logo SNCB" class="header__img-sncb">
+			</div>
+		</header>
+
+		<main class="container">
+				<section class="section">
+						<div class="ticket__container">
+							<div class="ticket__left-container">
+								<div class="fromto fromto__origin">
+									<h3 class="title fromto__title">Départ:</h3>
+									<input type="text" name="Départ" class=" fromto__gare">
+									<button class="fromto__edit text-big" >Modifier</button>
+								</div>
+
+								<div class="fromto fromto__arrival">
+									<h3 class="title fromto__title">Arrivée:</h3>
+									<input type="text" name="Arrivée" class=" fromto__gare" placeholder="Gembloux...">
+									<button class="fromto__edit text-big">Modifier</button>
+								</div>
+
+								<div class="fromto__details">
+									<div class="details details__nbr">
+										<h3 class="title title--small details__title">Nombre de voyageurs</h3>
+										<div class="count">
+											<button class="title count__button count__button--substract">-</button>
+											<span>1</span>
+											<button class="title count__button count__button--add">+</button>
+											
+										</div>
+									</div>
+									<div class="details details__calendar">
+										<h3 class="title title--small details__title">Date</h3>
+										<!-- A Coder  -->
+										<input type="date" name="Arrivée">
+										<!-- FIN A coder -->
+									</div>
+								</div>
+							</div>
+							<div class="ticket__left-container">
+								<div class="formore">
+									<div class="formore__btn--ar">
+										<button class="formore__btn formore__btn--left formore__btn--active text-big">Voyage Simple</button>
+										<button class="formore__btn formore__btn--right text-big">Voyage aller-retour</button>
+									</div>
+									<div class="formore__btn--rank">
+										<button class="formore__btn formore__btn--left formore__btn--active text-big">2nd Classe</button>
+										<button class="formore__btn formore__btn--right text-big">1ère classe</button>
+									</div>
+								</div>
+								<button class="formore__reductions title--small">Réductions et suppléments</button>
+							</div>
+						</div>
+				</section>
+		</main>
+
+		<footer class="container controls__container">
+			<button class="control control__previous">Étape précédente</button>
+			<button class="control control__next" type="submit" value="Submit" >Continuer</button>
+		</footer>
+
+		<script src="script.js"></script> 
+	</body>
+</html>

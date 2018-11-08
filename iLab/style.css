@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500');
+
+body{
+	font-family: 'Dosis', arial, sans-serif;
+	background-color: #2224B2;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-weight: 400;
+	color: #FFF;
+	font-size: 1.5vh; /* 16*0.7 EDITED DESIGN */
+	/* font-size: calc(12px + (12 - 24) * ((100vw - 400px) / (1600 - 300))); */
+	position: relative;
+}
+/* On est en mobile, pas besoin de focus ( ni de cursor: pointer sur les btns ) */
+*{
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GLOBALS */
+
+/* FONT SIZE */
+
+.text-reg{font-size: 1.125em;/*18÷16*/}
+.text-big{font-size: 1.25em;/*20÷16*/}
+
+.title{font-size: 2.1875em; /* 35 ÷ 16 */}
+.title--big{
+	font-size: 3.0625em;/*49÷16*/
+	font-weight: 500;
+}
+.title--small{font-size: 1.5625em;/*25÷16*/}
+
+/* HEADER */
+
+.header{
+	background-color: #FFF;
+	height: 12.125em; /* 194 ÷ 16 */
+}
+
+.header__title{
+	color: #2224B2;
+	line-height: 1.71428571429em; /* 84 ÷ 49 */
+	display: inline-block;
+}
+
+.header__img-sncb{
+	height: 5.325em; /* 85 ÷ 16 */
+	float: right;
+}
+
+.header__container{
+	padding-top: 5.25em; /* 84 ÷ 16 */
+}
+
+/* CONTROL PAGES */
+.controls__container{
+	position: absolute;
+	bottom: 4.75em; /* 76 ÷ 16 */
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.control{
+	font-size: 1.5625em; /* 25 ÷ 16 */
+	width: 19.0388170055%; /* 309 ÷ 1623 */
+	height: 3em;/* 75 ÷ 25 */
+	border: 0.12em solid #FFF;
+}
+
+.control__next{
+	float: right;
+	background-color: #FD7B0C;
+	color: #FFF;
+	border-color: #FD7B0C;
+
+}
+
+.control__previous{
+	float: left;
+	background-color: #2224B2;
+}
+
+/* CONTAINERS GLOBALS */
+
+.section{
+	padding: 0 6.46950092421%; /* 105 ÷ 1623 */
+	padding: 0 4%;
+	height: 46.0625em; /* 737 ÷ 16 */
+}
+
+.container{
+	width: 84.53125%; /* 1623 / 1920 ÷*/
+	width: 90%; /* 1623 / 1920 -> EDITED DESIGN */ 
+	margin: 0 auto;
+}
+
+/* SECTION TICKETS */
+
+.ticket__container{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 8.75em ; /* 140 ÷ 16 */
+	padding-top: 6em ; /* EDITED DESIGN 140 ÷ 16 */
+}
+
+.ticket__left-container{
+	width: 41.4720452937%;/* 585 ÷ 1413 */
+	width: 43%; /* EDITED */
+}
+
+.ticket__right-container{
+	width: 36.7303609342%; /* 519 ÷ 1413 */
+	width: 40%; /* EDITED */
+}
+
+.fromto__origin{
+	margin-bottom: 4.6875em; /* 75 ÷ 16 */
+}
+
+.fromto__arrival{
+	margin-bottom: 3.9375em; /* 63 ÷ 16 */
+}
+
+.fromto__title{
+	margin-bottom: 0.8em; /* 28 ÷ 35 */
+}
+
+.fromto__gare{
+	background-color: #FFF;
+	width: 65.1282051282%; /* 381 ÷ 585 */
+	font-size: 1.25em; /* 20 ÷ 16 */
+	height: 3.7em;/* 74 ÷ 20 */
+	border: none;
+}
+
+.fromto__edit{
+	height: 3.7em; /* 74 ÷ 20 */
+	background-color: #0D0E7C;
+	border: none;
+	width: 29.2307692308%;/* 171 ÷ 585 */
+	float: right;
+}
+
+.count{
+	text-align: center;
+	height: 4.625em; /* 74 ÷ 16 */
+}
+
+.count span{
+	display: inline-block;
+    	text-align: center;
+    	font-size: 1.5625em; /* 25 ÷ 16 */
+    	line-height: 1.5625em; /* 25 ÷ 16 */
+    	width: 1.5625em; /* 25 ÷ 16 */
+    	border: 0.08em #FFF solid; /* 2 ÷ 25 */
+    	border-radius: 50%;
+    	padding: 0.6em; /* 15 ÷ 16 */
+    	margin: 0 1.28em; /* 32 ÷ 25 */
+    	font-weight: 500;
+}
+
+.count__button{
+	padding: 10px 0;
+	background: none;
+	border: none;
+}
+
+.count__button--substract{
+	color: #A3A3A3;
+}
+
+.count__button--add{
+	color: #FC7B0C;
+}
+
+.formore__reductions{
+	background-color: #FFCB0D;
+	width: 100%;
+	height: 4.16em;/* 104 ÷ 25 */
+	margin-top: 3.12em; /* 78 ÷ 25 */
+	color: #2224B2;
+	border: none;
+	line-height: 4.16em;/* 104 ÷ 25 */;
+	text-align: left;
+}
+
+.formore__reductions:before{
+	content: '';
+	display: inline-block;
+	width: 4.16em;/* 104 ÷ 25 */
+	height: 4.16em;/* 104 ÷ 25 */
+	background: url("assets/img/supplement_reduction.svg");
+	background-size: 63%;
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 1.25em; /* ? */
+}
+
+.formore__btn{
+	width: 46.8208092486%;
+	height: 3.7em;/* 74 ÷ 20 */
+	border: 0.1em solid #FFF; /* 2 ÷ 20 */
+	background: none;
+}
+
+.formore__btn--ar{
+	margin-top: 4.0625em; /* 65 ÷ 16 */
+}
+
+.formore__btn--rank{
+	margin-top: 8.4375em; /* 135 ÷ 16 */
+}
+
+
+.formore__btn--ar:after, .formore__btn--rank:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.formore__btn--right{float: right}
+.formore__btn--left{float: left;}
+
+.formore__btn--active{
+	background-color: #FFF;
+	color: #2224B2;
+	border: 0.1em solid #FFF; /* 2 ÷ 20 */
+}
+
+.details{
+	width: 41.5384615385%; /* 243 ÷ 585 */
+}
+
+.details__nbr{
+	float: left;
+}
+
+.details__title{
+	text-align: center;
+	margin-bottom: 19px;
+}
+
+.details__calendar{
+	float: right;
+}
+
+input[type="date"]{
+	height: 2.96em; /* 74 ÷ 25 */
+	font-size: 1.5625em; /* 25 ÷ 16 */
+	width: 100%;
+	padding: 0;
+	background-color: #FFF;
+	border: none;
+}
+
+input[type="text"]{
+	padding-left: 1rem;
+	box-sizing: border-box;
+}
+
+/* FIN SECTION TICKET */
+
+
+
+
+
+
+
+
+
+
