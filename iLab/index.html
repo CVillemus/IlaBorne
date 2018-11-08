@@ -35,9 +35,9 @@
 									<div class="details details__nbr">
 										<h3 class="title title--small details__title">Nombre de voyageurs</h3>
 										<div class="count">
-											<button class="title count__button count__button--substract">-</button>
-											<span>1</span>
-											<button class="title count__button count__button--add">+</button>
+											<button class="title count__button count__button--off" id="subBtn">-</button>
+											<span id="count">1</span>
+											<button class="title count__button count__button" id="addBtn">+</button>
 											
 										</div>
 									</div>
@@ -52,12 +52,12 @@
 							<div class="ticket__left-container">
 								<div class="formore">
 									<div class="formore__btn--ar">
-										<button class="formore__btn formore__btn--left formore__btn--active text-big">Voyage Simple</button>
-										<button class="formore__btn formore__btn--right text-big">Voyage aller-retour</button>
+										<button class="formore__btn formore__btn--left formore__btn--active text-big" data-ars="as" id="preselectedType">Voyage Simple</button>
+										<button class="formore__btn formore__btn--right text-big" data-ars="ar">Voyage aller-retour</button>
 									</div>
 									<div class="formore__btn--rank">
-										<button class="formore__btn formore__btn--left formore__btn--active text-big">2nd Classe</button>
-										<button class="formore__btn formore__btn--right text-big">1ère classe</button>
+										<button class="formore__btn formore__btn--left formore__btn--active text-big" id="preselectedComfort" data-comfort="0" >2nd Classe</button>
+										<button class="formore__btn formore__btn--right text-big" data-comfort="1">1ère classe</button>
 									</div>
 								</div>
 								<button class="formore__reductions title--small">Réductions et suppléments</button>
@@ -68,7 +68,7 @@
 
 		<footer class="container controls__container">
 			<button class="control control__previous">Étape précédente</button>
-			<button class="control control__next" type="submit" value="Submit" >Continuer</button>
+			<button class="control control__next" id="btnNext">Continuer</button>
 		</footer>
 
 		<script src="script.js"></script> 
